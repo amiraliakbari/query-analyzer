@@ -52,8 +52,9 @@ def analyze_queries(queries, print_queries=False):
 
     
 queries = [
-    {'sql': 'SELECT first_name, last_name FROM table1 WHERE id=1', 'time': 13},
-    {'sql': 'SELECT first_name, last_name FROM table1 WHERE id=1', 'time': 8},
-    {'sql': 'SELECT first_name, last_name FROM table1 WHERE id=2', 'time': 17},]
+    {'sql': 'SELECT first_name, last_name FROM `table1` WHERE id=1', 'time': 13},
+    {'sql': 'SELECT age FROM `table2` WHERE id=1', 'time': 16},
+    {'sql': 'SELECT first_name, last_name FROM `table1` WHERE id=1', 'time': 8},
+    {'sql': 'SELECT first_name, last_name FROM `table1` WHERE id=2', 'time': 17},]
 analyze_queries(queries, print_queries=True)
 
